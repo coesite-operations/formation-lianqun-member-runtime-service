@@ -20,5 +20,9 @@
   },
   "engines": {
     "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coesite-operations/formation-lianqun-member-runtime-service.git"
   }
 }
