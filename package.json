@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "Shared protocol runtime hired by independently installable Academy formation-lianqun members.",
   "type": "module",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "exports": {
     ".": "./src/formation-lianqun-member.mjs",
     "./a2a": "./src/a2a-mape-member.mjs",
@@ -24,5 +24,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coesite-operations/formation-lianqun-member-runtime-service.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
   }
 }
