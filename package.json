@@ -1,13 +1,14 @@
 {
   "name": "@union-officer-academy/formation-lianqun-member-runtime-service",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Shared protocol runtime hired by independently installable Academy formation-lianqun members.",
   "type": "module",
   "license": "Apache-2.0",
   "exports": {
     ".": "./src/formation-lianqun-member.mjs",
     "./a2a": "./src/a2a-mape-member.mjs",
-    "./semantic-records": "./src/semantic-records.mjs"
+    "./semantic-records": "./src/semantic-records.mjs",
+    "./cli": "./src/member-cli.mjs"
   },
   "dependencies": {
     "@red-cup-engineering/immutable-content-custody-service": "1.0.3",
@@ -16,7 +17,7 @@
     "@red-cup-engineering/witness-journal-log-service": "0.1.3"
   },
   "scripts": {
-    "verify": "node --check src/formation-lianqun-member.mjs && node --check src/a2a-mape-member.mjs"
+    "verify": "node --check src/formation-lianqun-member.mjs && node --check src/a2a-mape-member.mjs && node --check src/member-cli.mjs"
   },
   "engines": {
     "node": ">=22"
@@ -28,5 +29,8 @@
   "funding": {
     "type": "individual",
     "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  },
+  "bin": {
+    "formation-lianqun-member": "./src/member-cli.mjs"
   }
 }
